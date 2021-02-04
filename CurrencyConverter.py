@@ -56,7 +56,7 @@ sub.pack()
 menu = tk.Frame(window)
 menu.pack()
 var = tk.StringVar(menu)
-var.set(currency[0])
+var.set("請選擇幣別")
 left_menu = tk.OptionMenu(menu, var, *currency, command=callback1)
 left_menu.pack(side=tk.LEFT)
 
@@ -64,7 +64,7 @@ arrow = tk.Label(menu, text="換成", font=("微軟正黑體", 25))
 arrow.pack(padx=40, side=tk.LEFT)
 
 var2 =tk.StringVar(menu)
-var2.set(currency[0])
+var2.set("請選擇幣別")
 right_menu = tk.OptionMenu(menu, var2, *currency, command=callback2)
 right_menu.pack(side=tk.LEFT)
 
